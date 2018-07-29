@@ -7,6 +7,9 @@ including the handling of `""` and `'\0'` as `false`, and properly handling of c
 `expr.to_b` will always return `true` or `false` no matter what you pass to it. `!!(expr)` is used
 as a fallback for any language features that are not explictly covered.
 
+An alias is provided so that you can also use `*.to_b?` if you think this makes more sense than
+`to_b` without the question mark. Both methods function in exactly the same way.
+
 ## Installation
 
 Add this to your application's `shard.yml`:
