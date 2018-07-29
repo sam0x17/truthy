@@ -38,6 +38,18 @@ SomeClass.new.to_b # => true
 "hey".to_b # => true
 '\0'.to_b # => false
 'c'.to_b # => true
+"0" # => false
+"1" # => true
+"200" # => true
+"1.0" # => true
+"-1.0" # => false
+"true" # => true
+"false" # => false
+"yes" # => true
+"no" # => false
+"nil" # => false
+"none" # => false
+"True" # => true
 
 # Integers
 0.to_b # => false

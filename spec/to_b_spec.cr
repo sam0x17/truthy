@@ -83,7 +83,19 @@ describe "#to_be" do
     "".to_b.should eq false
     "h".to_b.should eq true
     "hey".to_b.should eq true
-    "false".to_b.should eq true
+    "false".to_b.should eq false
+    "true".to_b.should eq true
+    "No".to_b.should eq false
+    "yes".to_b.should eq true
+    "nIl".to_b.should eq false
+    "-1.0".to_b.should eq false
+    "0.0".to_b.should eq false
+    "0.1".to_b.should eq true
+    "1".to_b.should eq true
+    "-1".to_b.should eq false
+    "0".to_b.should eq false
+    "[]".to_b.should eq false
+    "{}".to_b.should eq false
   end
 
   it "works with to_b? alias" do
