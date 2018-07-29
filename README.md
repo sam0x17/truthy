@@ -50,6 +50,8 @@ SomeClass.new.to_b # => true
 "nil" # => false
 "none" # => false
 "True" # => true
+"[]" # => false
+"{}" # => false
 
 # Integers
 0.to_b # => false
