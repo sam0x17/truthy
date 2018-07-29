@@ -26,4 +26,8 @@ class Object
     end
     !!self
   end
+
+  def to_b?
+    to_b
+  end
 end

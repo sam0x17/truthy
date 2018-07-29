@@ -85,4 +85,9 @@ describe "#to_be" do
     "hey".to_b.should eq true
     "false".to_b.should eq true
   end
+
+  it "works with to_b? alias" do
+    true.to_b?.should eq true.to_b
+    false.to_b?.should eq false.to_b
+  end
 end
