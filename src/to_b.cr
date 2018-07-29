@@ -11,11 +11,11 @@ class Object
     elsif self.is_a? String
       return false if self == ""
       begin
-        return to_b(self.to_i) if self.to_i.to_s == self
+        return self.to_i.to_b if self.to_i.to_s == self
       rescue
       end
       begin
-        return to_b(self.to_f) if self.to_f.to_s == self
+        return self.to_f.to_b if self.to_f.to_s == self
       rescue
       end
       return true
