@@ -23,7 +23,7 @@ dependencies:
 ## Usage
 
 ```crystal
-require "to_b"
+require "truthy"
 
 # Booleans
 true.to_b # => true
