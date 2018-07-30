@@ -71,4 +71,8 @@ SomeClass.new.to_b # => true
 -0.001.to_b # => false
 -1.0.to_b # => false
 23.342.to_b # => true
+
+# Arrays
+[1, 2, 3].to_b # => true
+([] of Int32).to_b # => false
 ```
