@@ -21,8 +21,8 @@ class Object
       return true
     elsif self.is_a? Char
       return self != '\0'
-    elsif self.is_a? Array
-      return !self.empty?
+    elsif self.responds_to?(:empty?)
+      return !self.empty?.to_b
     elsif self.is_a? Object
       return true
     end
