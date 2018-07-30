@@ -102,4 +102,13 @@ describe "#to_be" do
     true.to_b?.should eq true.to_b
     false.to_b?.should eq false.to_b
   end
+
+  it "works on arrays" do
+    arr = [] of Int32
+    arr.to_b.should eq false
+    arr << 1
+    arr.to_b.should eq true
+    arr.clear
+    arr.to_b.should eq false
+  end
 end
