@@ -1,14 +1,14 @@
-# to_b
+# truthy
 
-Monkey-patches all objects in crystal with a `to_b` (to boolean) method that will intelligently return
+Truthy patches all objects in crystal with a `to_b` (to boolean) method that will intelligently return
 a boolean based on the value of the object. This will differ from `!!(expr)` in a number of cases
 including the handling of `""` and `'\0'` as `false`, and properly handling of class instances.
 
 `expr.to_b` will always return `true` or `false` no matter what you pass to it. `!!(expr)` is used
 as a fallback for any language features that are not explictly covered.
 
-An alias is provided so that you can also use `*.to_b?` if you think this makes more sense than
-`to_b` without the question mark. Both methods function in exactly the same way.
+An alias is provided so that you can also use `*.truthy?` if you think this makes more sense than
+`to_b` without the question mark. Both methods function in exactly the same way and are interchangable.
 
 ## Installation
 
@@ -17,7 +17,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   to_b:
-    github: sam0x17/to_b
+    github: sam0x17/truthy
 ```
 
 ## Usage
@@ -75,4 +75,10 @@ SomeClass.new.to_b # => true
 # Arrays
 [1, 2, 3].to_b # => true
 ([] of Int32).to_b # => false
+
+# truthy? alias
+true.truthy? # => true
+false.truthy? # => false
+0.truthy? # => false
+1.truthy? # => true
 ```
