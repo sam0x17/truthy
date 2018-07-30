@@ -98,9 +98,9 @@ describe "#to_be" do
     "{}".to_b.should eq false
   end
 
-  it "works with to_b? alias" do
-    true.to_b?.should eq true.to_b
-    false.to_b?.should eq false.to_b
+  it "works with truthy? alias" do
+    true.truthy?.should eq true.to_b
+    false.truthy?.should eq false.to_b
   end
 
   it "works on arrays" do

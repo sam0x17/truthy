@@ -29,7 +29,7 @@ class Object
     !!self
   end
 
-  def to_b?
+  def truthy?
     to_b
   end
 end
