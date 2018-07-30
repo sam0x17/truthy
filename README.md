@@ -16,7 +16,7 @@ Add this to your application's `shard.yml`:
 
 ```yaml
 dependencies:
-  to_b:
+  truthy:
     github: sam0x17/truthy
 ```
 
