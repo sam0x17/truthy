@@ -2,7 +2,7 @@
 
 Truthy patches all objects in crystal with a `to_b` (to boolean) method that will intelligently return
 a boolean based on the value of the object. This will differ from `!!(expr)` in a number of cases
-including the handling of `""` and `'\0'` as `false`, and properly handling of class instances.
+including the handling of `""` and `'\0'` as `false`, and proper handling of class instances and arrays (an empty array => false, an array with elements => true).
 
 `expr.to_b` will always return `true` or `false` no matter what you pass to it. `!!(expr)` is used
 as a fallback for any language features that are not explictly covered.
