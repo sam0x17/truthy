@@ -38,20 +38,22 @@ SomeClass.new.to_b # => true
 "hey".to_b # => true
 '\0'.to_b # => false
 'c'.to_b # => true
-"0" # => false
-"1" # => true
-"200" # => true
-"1.0" # => true
-"-1.0" # => false
-"true" # => true
-"false" # => false
-"yes" # => true
-"no" # => false
-"nil" # => false
-"none" # => false
-"True" # => true
-"[]" # => false
-"{}" # => false
+"0".to_b # => false
+"1".to_b # => true
+"200".to_b # => true
+"1.0".to_b # => true
+"-1.0".to_b # => false
+"true".to_b # => true
+"false".to_b # => false
+"yes".to_b # => true
+"no".to_b # => false
+"nil".to_b # => false
+"null".to_b # => false
+"none".to_b # => false
+"True".to_b # => true
+"[]".to_b # => false
+"{}".to_b # => false
+
 
 # Integers
 0.to_b # => false

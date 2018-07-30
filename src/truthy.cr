@@ -9,7 +9,7 @@ class Object
     elsif self.is_a? Float
       return self > 0.0
     elsif self.is_a? String
-      return false if ["", "false", "no", "none", "nil", "[]", "{}"].includes? self.downcase
+      return false if ["", "false", "no", "none", "nil", "[]", "{}", "null"].includes? self.downcase
       begin
         return self.to_i.to_b if self.to_i.to_s == self
       rescue
