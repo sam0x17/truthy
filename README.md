@@ -8,7 +8,7 @@ including the handling of `""` and `'\0'` as `false`, and proper handling of cla
 as a fallback for any language features that are not explictly covered.
 
 An alias is provided so that you can also use `*.truthy?` if you think this makes more sense than
-`to_b` without the question mark. Both methods function in exactly the same way and are interchangable.
+`to_b`. Both methods function in exactly the same way and are interchangable.
 
 ## Installation
 
